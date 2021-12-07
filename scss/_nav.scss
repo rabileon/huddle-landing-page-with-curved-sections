@@ -1,0 +1,22 @@
+nav {
+    margin-top: 78px;
+    width: 1297px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 240px;
+        height: 38px;
+    }
+
+    a {
+        border: 1px solid hsl(322, 100%, 66%);
+        font-family: $font-family-secondary;
+        font-size: $font-size-regular;
+        color: $primary-pink;
+        border-radius: 20px;
+        padding: 10;
+    }
+}

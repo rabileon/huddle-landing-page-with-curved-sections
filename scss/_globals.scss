@@ -1,0 +1,23 @@
+$primary-pink: hsl(322, 100%, 66%);
+$primary-light-pink: hsl(321, 100%, 78%);
+$primary-light-red: hsl(0, 100%, 63%);
+
+$neutral-very-dark-cyan: hsl(192, 100%, 9%);
+$neutral-very-pale-blue: hsl(207, 100%, 98%);
+
+$font-family-primary: "Poppins", sans-serif;
+$font-family-secondary: "Open Sans", sans-serif;
+
+$font-size-regular: 16px;
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+        text-decoration: none;
+    }
+}
