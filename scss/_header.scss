@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    section {
+        margin-top: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            font-family: $font-family-primary;
+            font-size: $font-size-large;
+            font-weight: bold;
+        }
+        p {
+            font-family: $font-family-secondary;
+            font-size: $font-size-middle;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            align-content: center;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        a {
+            margin: 5vh 0 11vh;
+        }
+    }
+}
