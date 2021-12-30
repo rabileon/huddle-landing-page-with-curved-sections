@@ -1,0 +1,93 @@
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 880px;
+    margin: 12vh 0;
+
+    &__header {
+        font-family: $font-family-secondary;
+        font-size: 96px;
+        margin: 0;
+    }
+    &__detail {
+        font-family: $font-family-secondary;
+        color: $detail-color;
+        font-size: $font-size-detail;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+.sectionItem {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 560px;
+            width: 560px;
+            object-fit: contain;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 520px;
+        h3 {
+            font-family: $font-family-primary;
+            font-size: $font-size-h3;
+            margin: 0;
+        }
+        p {
+            font-family: $font-family-secondary;
+            font-size: $font-size-regular;
+            line-height: 24px;
+        }
+    }
+}
+
+.sectionLines {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $neutral-very-pale-blue;
+    }
+}
+.grow-together {
+    &-lines-top {
+        background-image: url('../images/bg-section-top-desktop-1.svg');
+    }
+
+    &-lines-bottom {
+        background-image: url('../images/bg-section-bottom-desktop-1.svg');
+    }
+}
+
+.flowingConversations {
+    margin: 10vh 0;
+}
+
+.your-users {
+    &-lines-top {
+        background-image: url('../images/bg-section-top-desktop-2.svg');
+    }
+    &-lines-bottom {
+        background-image: url('../images/bg-section-bottom-desktop-2.svg');
+    }
+}

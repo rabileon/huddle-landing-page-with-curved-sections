@@ -4,17 +4,21 @@ $primary-light-red: hsl(0, 100%, 63%);
 
 $neutral-very-dark-cyan: hsl(192, 100%, 9%);
 $neutral-very-pale-blue: hsl(207, 100%, 98%);
+$detail-color: hsl(208, 11%, 55%);
 
 $font-family-primary: 'Poppins', sans-serif;
 $font-family-secondary: 'Open Sans', sans-serif;
 
-$font-size-regular: 16px;
+$font-size-extra-large: 96px;
 $font-size-large: 48px;
+$font-size-detail: 24px;
 $font-size-middle: 20px;
+$font-size-regular: 16px;
+$font-size-h3: 40px;
 
 body {
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,5 +42,13 @@ body {
         align-content: center;
         align-items: center;
         border-radius: 40px;
+    }
+
+    .bg-img {
+        height: 30vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
