@@ -14,7 +14,8 @@ $font-size-large: 48px;
 $font-size-detail: 24px;
 $font-size-middle: 20px;
 $font-size-regular: 16px;
-$font-size-h3: 40px;
+$font-size-footer-detail: 14px;
+$font-size-title: 40px;
 
 body {
     margin: 0;
@@ -50,5 +51,21 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .button-secondary {
+        height: 48px;
+        width: 160px;
+        background-color: $primary-pink;
+        color: #ffffff;
+        font-family: $font-family-secondary;
+        font-size: $font-size-regular;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-weight: bold;
     }
 }
