@@ -5,10 +5,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media(mobile-only) {
+        width: 327px;
+        height: 24px;
+        margin-top: 4vh;
+    }
 
     img {
         width: 240px;
         height: 38px;
+        @include media(mobile-only) {
+            width: 96px;
+            height: 16px;
+        }
     }
 
     a {
@@ -24,6 +33,12 @@ nav {
         align-items: center;
         box-sizing: border-box;
         box-shadow: 0px 0px 9px hsl(322, 100%, 66%, 21.88%);
+        @include media(mobile-only) {
+            width: 80px;
+            height: 24px;
+            border-radius: 11.76px;
+            font-size: $font-size-regular-mobile;
+        }
     }
 
     a:hover {

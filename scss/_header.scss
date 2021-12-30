@@ -11,10 +11,18 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @include media(mobile-only) {
+            width: 296px;
+            margin-top: 15vh;
+        }
+
         h1 {
             font-family: $font-family-primary;
             font-size: $font-size-large;
             font-weight: bold;
+            @include media(mobile-only) {
+                font-size: $font-size-large-mobile;
+            }
         }
         p {
             font-family: $font-family-secondary;
@@ -27,10 +35,20 @@ header {
             align-content: center;
             text-align: center;
             line-height: 30px;
+            @include media(mobile-only) {
+                font-size: $font-size-middle-mobile;
+                width: auto;
+                line-height: 21px;
+            }
         }
 
         a {
             margin: 5vh 0 11vh;
         }
     }
+}
+
+.hero-img {
+    width: 296px;
+    height: 209px;
 }

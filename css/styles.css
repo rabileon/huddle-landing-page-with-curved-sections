@@ -45,6 +45,14 @@ body .button-primary {
   -webkit-box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.2231);
           box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.2231);
 }
+@media only screen and (max-width: 768px) {
+  body .button-primary {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+}
 body .button-primary:hover,
 body .button-secondary:hover {
   background-color: #ff8fd8;
@@ -94,9 +102,22 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 327px;
+    height: 24px;
+    margin-top: 4vh;
+  }
+}
 nav img {
   width: 240px;
   height: 38px;
+}
+@media only screen and (max-width: 768px) {
+  nav img {
+    width: 96px;
+    height: 16px;
+  }
 }
 nav a {
   border: 1px solid #ff52bf;
@@ -119,6 +140,14 @@ nav a {
           box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 9px rgba(255, 82, 191, 0.2188);
           box-shadow: 0px 0px 9px rgba(255, 82, 191, 0.2188);
+}
+@media only screen and (max-width: 768px) {
+  nav a {
+    width: 80px;
+    height: 24px;
+    border-radius: 11.76px;
+    font-size: 9.41px;
+  }
 }
 nav a:hover {
   border: 1px solid #ff8fd8;
@@ -156,10 +185,21 @@ header section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media only screen and (max-width: 768px) {
+  header section {
+    width: 296px;
+    margin-top: 15vh;
+  }
+}
 header section h1 {
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  header section h1 {
+    font-size: 24px;
+  }
 }
 header section p {
   font-family: "Open Sans", sans-serif;
@@ -180,8 +220,20 @@ header section p {
   text-align: center;
   line-height: 30px;
 }
+@media only screen and (max-width: 768px) {
+  header section p {
+    font-size: 14px;
+    width: auto;
+    line-height: 21px;
+  }
+}
 header section a {
   margin: 5vh 0 11vh;
+}
+
+.hero-img {
+  width: 296px;
+  height: 209px;
 }
 
 .status {
@@ -198,10 +250,24 @@ header section a {
   width: 880px;
   margin: 12vh 0;
 }
+@media only screen and (max-width: 768px) {
+  .status {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
+}
 .status__header {
   font-family: "Open Sans", sans-serif;
   font-size: 96px;
   margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .status__header {
+    font-size: 60px;
+  }
 }
 .status__detail {
   font-family: "Open Sans", sans-serif;
@@ -215,6 +281,11 @@ header section a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .status__detail {
+    font-size: 15px;
+  }
+}
 
 .sectionItem {
   display: -webkit-box;
@@ -224,6 +295,15 @@ header section a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .sectionItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: auto;
+  }
 }
 .sectionItem__img {
   display: -webkit-box;
@@ -242,6 +322,12 @@ header section a {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media only screen and (max-width: 768px) {
+  .sectionItem__img img {
+    width: 258.61px;
+    height: auto;
+  }
+}
 .sectionItem__detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,15 +344,35 @@ header section a {
           flex-direction: column;
   width: 520px;
 }
+@media only screen and (max-width: 768px) {
+  .sectionItem__detail {
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .sectionItem__detail h3 {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   margin: 0;
 }
+@media only screen and (max-width: 768px) {
+  .sectionItem__detail h3 {
+    font-size: 20px;
+  }
+}
 .sectionItem__detail p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .sectionItem__detail p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
 }
 
 .sectionLines {
@@ -302,8 +408,18 @@ header section a {
 .grow-together-lines-top {
   background-image: url("../images/bg-section-top-desktop-1.svg");
 }
+@media only screen and (max-width: 768px) {
+  .grow-together-lines-top {
+    background-image: url("../images/bg-section-top-mobile-1.svg");
+  }
+}
 .grow-together-lines-bottom {
   background-image: url("../images/bg-section-bottom-desktop-1.svg");
+}
+@media only screen and (max-width: 768px) {
+  .grow-together-lines-bottom {
+    background-image: url("../images/bg-section-bottom-mobile-1.svg");
+  }
 }
 
 .flowingConversations {
@@ -313,8 +429,18 @@ header section a {
 .your-users-lines-top {
   background-image: url("../images/bg-section-top-desktop-2.svg");
 }
+@media only screen and (max-width: 768px) {
+  .your-users-lines-top {
+    background-image: url("../images/bg-section-top-mobile-2.svg");
+  }
+}
 .your-users-lines-bottom {
   background-image: url("../images/bg-section-bottom-desktop-2.svg");
+}
+@media only screen and (max-width: 768px) {
+  .your-users-lines-bottom {
+    background-image: url("../images/bg-section-bottom-mobile-2.svg");
+  }
 }
 
 .buildYourCommunity {
@@ -337,9 +463,20 @@ header section a {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
 }
+@media only screen and (max-width: 768px) {
+  .buildYourCommunity h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
 
 .footer-line-top {
   background-image: url("../images/bg-footer-top-desktop.svg");
+}
+@media only screen and (max-width: 768px) {
+  .footer-line-top {
+    background-image: url("../images/bg-footer-top-mobile.svg");
+  }
 }
 
 footer {
@@ -368,6 +505,15 @@ footer .container-footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  footer .container-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
 }
 footer .container-footer__section-left {
   display: -webkit-box;

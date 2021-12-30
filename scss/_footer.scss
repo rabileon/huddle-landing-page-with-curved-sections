@@ -1,5 +1,8 @@
 .footer-line-top {
     background-image: url('../images/bg-footer-top-desktop.svg');
+    @include media(mobile-only) {
+        background-image: url('../images/bg-footer-top-mobile.svg');
+    }
 }
 
 footer {
@@ -16,6 +19,11 @@ footer {
         width: 1200px;
         display: flex;
         justify-content: space-between;
+
+        @include media(mobile-only) {
+            flex-direction: column;
+            width: auto;
+        }
 
         &__section-left {
             display: flex;

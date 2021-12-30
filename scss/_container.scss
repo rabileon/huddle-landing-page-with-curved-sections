@@ -5,11 +5,18 @@
     height: auto;
     width: 880px;
     margin: 12vh 0;
-
+    @include media(mobile-only) {
+        flex-direction: column;
+        width: auto;
+    }
     &__header {
         font-family: $font-family-secondary;
         font-size: 96px;
         margin: 0;
+
+        @include media(mobile-only) {
+            font-size: 60px;
+        }
     }
     &__detail {
         font-family: $font-family-secondary;
@@ -18,12 +25,20 @@
         margin: 0;
         display: flex;
         justify-content: center;
+        @include media(mobile-only) {
+            font-size: 15px;
+        }
     }
 }
 .sectionItem {
     display: flex;
     width: 1200px;
     justify-content: space-between;
+    @include media(mobile-only) {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+
     &__img {
         display: flex;
         justify-content: center;
@@ -32,6 +47,11 @@
             height: 560px;
             width: 560px;
             object-fit: contain;
+
+            @include media(mobile-only) {
+                width: 258.61px;
+                height: auto;
+            }
         }
     }
 
@@ -41,15 +61,27 @@
         align-items: flex-start;
         flex-direction: column;
         width: 520px;
+        @include media(mobile-only) {
+            width: auto;
+            align-items: center;
+        }
         h3 {
             font-family: $font-family-primary;
             font-size: $font-size-title;
             margin: 0;
+            @include media(mobile-only) {
+                font-size: 20px;
+            }
         }
         p {
             font-family: $font-family-secondary;
             font-size: $font-size-regular;
             line-height: 24px;
+            @include media(mobile-only) {
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+            }
         }
     }
 }
@@ -72,10 +104,17 @@
 .grow-together {
     &-lines-top {
         background-image: url('../images/bg-section-top-desktop-1.svg');
+
+        @include media(mobile-only) {
+            background-image: url('../images/bg-section-top-mobile-1.svg');
+        }
     }
 
     &-lines-bottom {
         background-image: url('../images/bg-section-bottom-desktop-1.svg');
+        @include media(mobile-only) {
+            background-image: url('../images/bg-section-bottom-mobile-1.svg');
+        }
     }
 }
 
@@ -86,9 +125,17 @@
 .your-users {
     &-lines-top {
         background-image: url('../images/bg-section-top-desktop-2.svg');
+
+        @include media(mobile-only) {
+            background-image: url('../images/bg-section-top-mobile-2.svg');
+        }
     }
     &-lines-bottom {
         background-image: url('../images/bg-section-bottom-desktop-2.svg');
+
+        @include media(mobile-only) {
+            background-image: url('../images/bg-section-bottom-mobile-2.svg');
+        }
     }
 }
 
@@ -101,5 +148,9 @@
     h2 {
         font-family: $font-family-primary;
         font-size: $font-size-title;
+        @include media(mobile-only) {
+            font-size: $font-size-large-mobile;
+            text-align: center;
+        }
     }
 }

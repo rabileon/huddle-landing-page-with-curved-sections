@@ -11,9 +11,12 @@ $font-family-secondary: 'Open Sans', sans-serif;
 
 $font-size-extra-large: 96px;
 $font-size-large: 48px;
+$font-size-large-mobile: 24px;
 $font-size-detail: 24px;
 $font-size-middle: 20px;
+$font-size-middle-mobile: 14px;
 $font-size-regular: 16px;
+$font-size-regular-mobile: 9.41px;
 $font-size-footer-detail: 14px;
 $font-size-title: 40px;
 
@@ -44,6 +47,12 @@ body {
         align-items: center;
         border-radius: 40px;
         box-shadow: 0px 6px 13px hsl(192, 100%, 9%, 22.31%);
+        @include media(mobile-only) {
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
     }
 
     .button-primary:hover,
