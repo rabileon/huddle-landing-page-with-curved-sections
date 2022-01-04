@@ -8,6 +8,23 @@
     @include media(mobile-only) {
         flex-direction: column;
         width: auto;
+        height: 356px;
+        margin: 6vh 0;
+    }
+
+    &-left {
+        @include media(mobile-only) {
+            img {
+                width: 35.56px;
+            }
+        }
+    }
+    &-right {
+        @include media(mobile-only) {
+            img {
+                width: 31.22px;
+            }
+        }
     }
     &__header {
         font-family: $font-family-secondary;
@@ -43,6 +60,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 9vh 0;
         img {
             height: 560px;
             width: 560px;
@@ -62,7 +80,7 @@
         flex-direction: column;
         width: 520px;
         @include media(mobile-only) {
-            width: auto;
+            width: 320px;
             align-items: center;
         }
         h3 {
@@ -78,6 +96,7 @@
             font-size: $font-size-regular;
             line-height: 24px;
             @include media(mobile-only) {
+                margin: 3vh 0;
                 font-size: 14px;
                 line-height: 21px;
                 text-align: center;

@@ -22,6 +22,8 @@ header {
             font-weight: bold;
             @include media(mobile-only) {
                 font-size: $font-size-large-mobile;
+                text-align: center;
+                line-height: 36px;
             }
         }
         p {
@@ -43,12 +45,17 @@ header {
         }
 
         a {
+            @include media(mobile-only) {
+                margin: 7vh 0 11vh;
+            }
             margin: 5vh 0 11vh;
         }
     }
 }
 
 .hero-img {
-    width: 296px;
-    height: 209px;
+    @include media(mobile-only) {
+        width: 296px;
+        height: 209px;
+    }
 }

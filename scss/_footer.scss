@@ -108,6 +108,9 @@ footer {
                 justify-content: flex-start;
                 align-items: center;
                 margin: 5vh 0;
+                @include media(mobile-only) {
+                    flex-direction: column;
+                }
                 input {
                     margin-right: 2vw;
                     height: 48px;
