@@ -47,13 +47,14 @@
         }
     }
 }
+
 .sectionItem {
     display: flex;
     width: 1200px;
     justify-content: space-between;
     @include media(mobile-only) {
-        flex-direction: column-reverse;
         width: auto;
+        flex-direction: column-reverse;
     }
 
     &__img {
@@ -139,6 +140,9 @@
 
 .flowingConversations {
     margin: 10vh 0;
+    @include media(mobile-only) {
+        flex-direction: column;
+    }
 }
 
 .your-users {

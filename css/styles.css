@@ -324,11 +324,11 @@ header section a {
 }
 @media only screen and (max-width: 768px) {
   .sectionItem {
+    width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    width: auto;
   }
 }
 .sectionItem__img {
@@ -452,6 +452,14 @@ header section a {
 
 .flowingConversations {
   margin: 10vh 0;
+}
+@media only screen and (max-width: 768px) {
+  .flowingConversations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .your-users-lines-top {
