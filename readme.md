@@ -10,7 +10,7 @@
 
 ## Deploy
 
-[🚀 Deploy]()
+[🚀 Deploy](https://rabileon.github.io/huddle-landing-page-with-curved-sections/)
 
 ## Contact
 
