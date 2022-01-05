@@ -15,13 +15,12 @@ footer {
 
     .container-footer {
         margin: 5vh 0;
-
         width: 1200px;
         display: flex;
         justify-content: space-between;
 
         @include media(mobile-only) {
-            flex-direction: column;
+            flex-direction: column-reverse;
             width: auto;
         }
 
@@ -31,10 +30,18 @@ footer {
             align-items: flex-start;
             flex-direction: column;
             width: 50%;
+            @include media(mobile-only) {
+                width: 100%;
+                margin-top: 14vh;
+            }
             &-logo {
                 width: 240px;
                 height: 38px;
                 color: white;
+                @include media(mobile-only) {
+                    width: 200px;
+                    height: 32px;
+                }
             }
 
             &-detail {
@@ -44,6 +51,10 @@ footer {
                 font-size: $font-size-footer-detail;
                 font-weight: 600;
                 color: white;
+                @include media(mobile-only) {
+                    line-height: 24px;
+                    width: 320px;
+                }
             }
 
             &-contact {
@@ -55,14 +66,21 @@ footer {
                     justify-content: flex-start;
                     align-items: center;
                     img {
+                        object-fit: contain;
                         width: 24px;
                         height: 24px;
                         margin-right: 1vw;
+                        @include media(mobile-only) {
+                            margin-right: 5vw;
+                        }
                     }
                     p {
                         font-family: $font-family-secondary;
                         font-size: $font-size-regular;
                         color: white;
+                        @include media(mobile-only) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -77,10 +95,17 @@ footer {
                     height: 32px;
                     padding: 0;
                     margin-right: 24px;
+                    @include media(mobile-only) {
+                        width: 23px;
+                        margin-right: 14px;
+                    }
 
                     i {
                         font-size: 32px;
                         color: #ffffff;
+                        @include media(mobile-only) {
+                            font-size: 23px;
+                        }
                     }
                 }
             }
@@ -88,11 +113,20 @@ footer {
 
         &__section-right {
             width: 50%;
+            @include media(mobile-only) {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
             &-title {
                 color: #ffffff;
                 font-family: $font-family-secondary;
                 font-weight: bold;
                 font-size: $font-size-detail;
+                @include media(mobile-only) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
 
             &-detail {
@@ -101,6 +135,10 @@ footer {
                 font-family: $font-family-secondary;
                 font-size: $font-size-footer-detail;
                 font-weight: 600;
+                @include media(mobile-only) {
+                    line-height: 24px;
+                    width: 320px;
+                }
             }
 
             &-mail {
@@ -110,6 +148,15 @@ footer {
                 margin: 5vh 0;
                 @include media(mobile-only) {
                     flex-direction: column;
+                    margin-top: 2vh;
+                    margin-bottom: 8vh;
+                    justify-content: center;
+                    align-items: flex-end;
+
+                    input:first-child {
+                        width: 100%;
+                        margin-bottom: 2vh;
+                    }
                 }
                 input {
                     margin-right: 2vw;
@@ -119,6 +166,9 @@ footer {
                     font-family: $font-family-primary;
                     font-size: $font-size-regular;
                     border-radius: 5px;
+                    @include media(mobile-only) {
+                        margin-right: 0;
+                    }
                 }
             }
         }

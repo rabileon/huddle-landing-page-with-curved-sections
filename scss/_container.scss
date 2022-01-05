@@ -97,7 +97,8 @@
             font-size: $font-size-regular;
             line-height: 24px;
             @include media(mobile-only) {
-                margin: 3vh 0;
+                margin-top: 3vh;
+                margin-bottom: 14vh;
                 font-size: 14px;
                 line-height: 21px;
                 text-align: center;
@@ -168,12 +169,18 @@
     align-items: center;
     flex-direction: column;
     margin: 22vh 0;
+    @include media(mobile-only) {
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+    }
     h2 {
         font-family: $font-family-primary;
         font-size: $font-size-title;
         @include media(mobile-only) {
             font-size: $font-size-large-mobile;
             text-align: center;
+            line-height: 36px;
+            margin-bottom: 5vh;
         }
     }
 }

@@ -85,5 +85,8 @@ body {
         align-items: center;
         border-radius: 5px;
         font-weight: bold;
+        @include media(mobile-only) {
+            font-size: 16px;
+        }
     }
 }
