@@ -658,7 +658,7 @@ footer .container-footer__section-left-contact div p {
 footer .container-footer__section-left-social-media {
   margin-top: 82px;
 }
-footer .container-footer__section-left-social-media button {
+footer .container-footer__section-left-social-media .social-links-item {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -668,17 +668,17 @@ footer .container-footer__section-left-social-media button {
   margin-right: 24px;
 }
 @media only screen and (max-width: 768px) {
-  footer .container-footer__section-left-social-media button {
+  footer .container-footer__section-left-social-media .social-links-item {
     width: 23px;
     margin-right: 14px;
   }
 }
-footer .container-footer__section-left-social-media button i {
+footer .container-footer__section-left-social-media .social-links-item i {
   font-size: 32px;
   color: #ffffff;
 }
 @media only screen and (max-width: 768px) {
-  footer .container-footer__section-left-social-media button i {
+  footer .container-footer__section-left-social-media .social-links-item i {
     font-size: 23px;
   }
 }
