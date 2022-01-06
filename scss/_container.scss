@@ -10,7 +10,7 @@ main {
     align-items: center;
     height: auto;
     width: 880px;
-    margin: 12vh 0;
+    margin: 25vh 0;
     @include media(mobile-only) {
         flex-direction: column;
         width: auto;
